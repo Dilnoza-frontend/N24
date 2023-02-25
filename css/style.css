@@ -24,6 +24,14 @@ img {
   height: auto;
 }
 
+/* outline styles  */
+*:focus {
+  outline: 2px dashed #7296EC;
+  outline-offset: 3px;
+}
+
+
+
 /* Button  */
 .button {
   display: inline-block;
@@ -59,11 +67,6 @@ img {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* Site-header */
-.site-header {
-
 }
 
 /* site-header-top */
@@ -108,6 +111,23 @@ opacity: 0.8;
 .currency-rates-type {
   color: #2959CE;
 }
+/* global-search-form  */
+.global-search-form {
+  margin-right: 25px;
+}
+
+
+.global-search-form-input {
+  padding-top: 15px;
+  padding-bottom: 13px;
+  padding-left: 40px;
+  padding-right: 20px;
+  border: 0;
+  border-radius: 60px;
+  font-size: 14px;
+  line-height: normal;
+
+}
 
 /* Lang-toggle */
 .lang-toggler {
@@ -131,8 +151,4 @@ opacity: 0.8;
 .lang-toggle-link-active {
   background-color: #fff;
   color: #000;
-}
-.button {
-}
-.button-primary {
 }
