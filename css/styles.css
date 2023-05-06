@@ -1,11 +1,20 @@
-* {
-  box-sizing: border-box;
-  }
+:root {
+  --accent-color: #7296EC;
+}
+
 
 html {
-  height: 100%;
+  box-sizing: border-box;
+  height: 100px;
   scroll-behavior: smooth;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  }
+
 body {
   display: flex;
   flex-direction: column;
@@ -26,7 +35,7 @@ img {
 
 /* outline styles  */
 *:focus {
-  outline: 2px dashed #7296EC;
+  outline: 2px dashed var(--accent-color);
   outline-offset: 3px;
 }
 
@@ -50,7 +59,7 @@ img {
 }
 
 .button-primary {
-  background-color: #7296EC;
+  background-color: var(--accent-color);
   color: #fff;
 
 }
@@ -205,7 +214,7 @@ opacity: 0.8;
 }
 
 .sitenav-link:hover {
-  color: #7296EC;
+  color: var(--accent-color);
 }
 
 .sitenav-link:active {
@@ -260,7 +269,7 @@ opacity: 0.8;
 }
 
 .article-card-link:hover {
-  color: #7296EC;
+  color: var(--accent-color);
 }
 
 .article-card-link:active {
@@ -366,7 +375,7 @@ opacity: 0.8;
   }
 
   .article-card-horizontal-link:hover {
-    color: #7296EC;
+    color: var(--accent-color);
   }
 
   .article-card-horizontal-link:active {
@@ -470,7 +479,7 @@ opacity: 0.8;
   }
 
   .sidebar-news-card-link:hover {
-    color: #7296EC;
+    color: var(--accent-color);
   }
 
   .sidebar-news-card-link:active {
